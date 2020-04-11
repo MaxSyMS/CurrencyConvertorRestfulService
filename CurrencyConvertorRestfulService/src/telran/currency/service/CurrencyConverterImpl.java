@@ -49,7 +49,7 @@ public class CurrencyConverterImpl implements ICurrencyConverter {
 
 	private LocalDateTime getLocalDate(int timestamp) {
 		Instant date = Instant.ofEpochSecond(timestamp);
-		return LocalDateTime.ofInstant(date, ZoneId.systemDefault());
+		return LocalDateTime.ofInstant(date, ZoneId.of("Asia/Jerusalem"));
 	}
 
 	@Override
